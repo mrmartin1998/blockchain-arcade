@@ -1,11 +1,12 @@
 import web3 from './web3';
-import SimpleStorageArtifact from '../../../build/contracts/SimpleStorage.json';
+import ArcadeTokenArtifact from '../../../build/contracts/ArcadeToken.json';
 
-// Deployed contract address (update with your actual contract address)
-const SimpleStorageAddress = '0x6b4eb3a421802A3C27230391101Ca18F12BCE22E';
+// Deployed contract address for ArcadeToken
+const ArcadeTokenAddress = '0xA626E62b3B19276BaDdCC1d86F6fe5322309c2b5';
 
-const SimpleStorage = new web3.eth.Contract(SimpleStorageArtifact.abi, SimpleStorageAddress);
+// Create an instance of the ArcadeToken contract
+const ArcadeToken = new web3.eth.Contract(ArcadeTokenArtifact.abi, ArcadeTokenAddress);
 
 export {
-    SimpleStorage
+    ArcadeToken
 };

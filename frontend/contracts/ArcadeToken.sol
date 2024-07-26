@@ -2,12 +2,17 @@
 pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract ArcadeToken is ERC20, Ownable {
-    constructor() ERC20("ArcadeToken", "ARC") Ownable(msg.sender) {}
+contract ArcadeToken is ERC20 {
+    constructor(uint256 initialSupply) ERC20("ArcadeToken", "ARCD") {
+        _mint(msg.sender, initialSupply);
+    }
 
-    function mint(address to, uint256 amount) public onlyOwner {
+    function mint(address to, uint256 amount) public {
         _mint(to, amount);
+    }
+
+    function totalSupply() public view override returns (uint256) {
+        return super.totalSupply();
     }
 }

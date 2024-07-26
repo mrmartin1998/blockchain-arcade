@@ -4,7 +4,6 @@
 
 import React from 'react';
 import Link from 'next/link';
-import SimpleStorageComponent from './components/SimpleStorageComponent';
 
 const HomePage = () => {
   return (
@@ -15,8 +14,8 @@ const HomePage = () => {
           This boilerplate provides a ready-to-use foundation for your blockchain web applications.
         </p>
         <div className="mb-4">
-          <Link href="/pages/auth/signin" className="btn btn-primary w-full mb-4">
-            Sign In
+          <Link href="/pages/buytoken/" className="btn btn-primary w-full mb-4">
+            Buy Tokens
           </Link>
           <Link href="/pages/auth/register" className="btn btn-success w-full">
             Register
@@ -25,7 +24,7 @@ const HomePage = () => {
         </div>
         
       </div>
-      <SimpleStorageComponent />
+
     </div>
   );
 };
