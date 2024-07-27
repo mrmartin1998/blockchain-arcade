@@ -1,5 +1,7 @@
 const ArcadeGame = artifacts.require("ArcadeGame");
+const ArcadeToken = artifacts.require("ArcadeToken");
 
-module.exports = function (deployer) {
-  deployer.deploy(ArcadeGame, web3.utils.toWei('1', 'ether')); // Set game fee to 1 token
+module.exports = async function (deployer) {
+  const gameCost = web3.utils.toWei('10', 'ether'); // Example game cost
+  await deployer.deploy(ArcadeGame, ArcadeToken.address, gameCost);
 };

@@ -12,20 +12,22 @@ const BuyTokens = () => {
         setMessage('');
         try {
             const accounts = await web3.eth.getAccounts();
-            console.log('Accounts:', accounts);
+            const account = accounts[0];
+
+            console.log('Account:', account);
 
             const weiAmount = web3.utils.toWei(amount.toString(), 'ether');
             console.log('Wei Amount:', weiAmount);
 
-            const mintMethod = ArcadeToken.methods.mint(accounts[0], weiAmount);
+            const mintMethod = ArcadeToken.methods.mint(account, weiAmount);
             console.log('Mint Method:', mintMethod);
 
             // Estimate gas for the mint method
-            const gasEstimate = await mintMethod.estimateGas({ from: accounts[0] });
+            const gasEstimate = await mintMethod.estimateGas({ from: account });
             console.log('Estimated Gas:', gasEstimate);
 
             // Send the transaction with the estimated gas
-            await mintMethod.send({ from: accounts[0], gas: gasEstimate });
+            await mintMethod.send({ from: account, gas: gasEstimate });
             setMessage('Tokens purchased successfully!');
         } catch (error) {
             console.error('Error minting tokens:', error);
@@ -51,7 +53,6 @@ const BuyTokens = () => {
     return (
         <div className="min-h-screen flex flex-col items-center justify-center bg-base-200">
             <div className="bg-base-100 p-8 rounded shadow-md w-full max-w-md text-center">
-                
                 <h1 className="text-2xl font-bold mb-6">Buy ArcadeTokens</h1>
                 <div className="form-control w-full max-w-xs">
                     <label htmlFor="amount" className="label">
@@ -77,7 +78,7 @@ const BuyTokens = () => {
                         disabled={loading}
                     >
                         Check Total Supply
-                    </button>
+                    </button> 
                     {message && <p className="mt-4 text-center">{message}</p>}
                 </div>
             </div>

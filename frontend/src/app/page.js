@@ -17,8 +17,8 @@ const HomePage = () => {
           <Link href="/pages/buytoken/" className="btn btn-primary w-full mb-4">
             Buy Tokens
           </Link>
-          <Link href="/pages/auth/register" className="btn btn-success w-full">
-            Register
+          <Link href="/pages/games/" className="btn btn-success w-full">
+            Play Game
           </Link>
           
         </div>

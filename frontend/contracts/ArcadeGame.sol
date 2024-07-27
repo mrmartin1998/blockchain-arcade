@@ -1,16 +1,28 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract ArcadeGame {
-    uint256 public gameFee;
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
-    constructor(uint256 _gameFee) {
-        gameFee = _gameFee;
+contract ArcadeGame {
+    IERC20 public arcadeToken;
+    uint256 public gameCost;
+
+    event GamePlayed(address indexed player, uint256 cost);
+
+    constructor(IERC20 _arcadeToken, uint256 _gameCost) {
+        arcadeToken = _arcadeToken;
+        gameCost = _gameCost;
     }
 
-    function playGame() public payable returns (bool) {
-        require(msg.value >= gameFee, "Insufficient game fee");
-        // Game logic here
-        return true;
+    function play() public {
+        require(arcadeToken.balanceOf(msg.sender) >= gameCost, "Insufficient token balance");
+        require(arcadeToken.allowance(msg.sender, address(this)) >= gameCost, "Allowance too low");
+
+        arcadeToken.transferFrom(msg.sender, address(this), gameCost);
+        emit GamePlayed(msg.sender, gameCost);
+    }
+
+    function withdrawTokens(address to, uint256 amount) public {
+        arcadeToken.transfer(to, amount);
     }
 }
