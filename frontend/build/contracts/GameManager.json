@@ -53,9 +53,9 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.26+commit.8a97fa7a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_token\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_game\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"game\",\"outputs\":[{\"internalType\":\"contract ArcadeGame\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"playGame\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"token\",\"outputs\":[{\"internalType\":\"contract ArcadeToken\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/GameManager.sol\":\"GameManager\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/access/Ownable.sol\":{\"keccak256\":\"0xff6d0bb2e285473e5311d9d3caacb525ae3538a80758c10649a4d61029b017bb\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8ed324d3920bb545059d66ab97d43e43ee85fd3bd52e03e401f020afb0b120f6\",\"dweb:/ipfs/QmfEckWLmZkDDcoWrkEvMWhms66xwTLff9DDhegYpvHo1a\"]},\"@openzeppelin/contracts/interfaces/draft-IERC6093.sol\":{\"keccak256\":\"0x60c65f701957fdd6faea1acb0bb45825791d473693ed9ecb34726fdfaa849dd7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ea290300e0efc4d901244949dc4d877fd46e6c5e43dc2b26620e8efab3ab803f\",\"dweb:/ipfs/QmcLLJppxKeJWqHxE2CUkcfhuRTgHSn8J4kijcLa5MYhSt\"]},\"@openzeppelin/contracts/token/ERC20/ERC20.sol\":{\"keccak256\":\"0xc3e1fa9d1987f8d349dfb4d6fe93bf2ca014b52ba335cfac30bfe71e357e6f80\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c5703ccdeb7b1d685e375ed719117e9edf2ab4bc544f24f23b0d50ec82257229\",\"dweb:/ipfs/QmTdwkbQq7owpCiyuzE7eh5LrD2ddrBCZ5WHVsWPi1RrTS\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xc6a8ff0ea489379b61faa647490411b80102578440ab9d84e9a957cc12164e70\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0ea104e577e63faea3b69c415637e99e755dcbf64c5833d7140c35a714d6d90c\",\"dweb:/ipfs/Qmau6x4Ns9XdyynRCNNp3RhLqijJjFm7z5fyZazfYFGYdq\"]},\"@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol\":{\"keccak256\":\"0xaa761817f6cd7892fcf158b3c776b34551cde36f48ff9703d53898bc45a94ea2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0ad7c8d4d08938c8dfc43d75a148863fb324b80cf53e0a36f7e5a4ac29008850\",\"dweb:/ipfs/QmcrhfPgVNf5mkdhQvy1pMv51TFokD3Y4Wa5WZhFqVh8UV\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0x493033a8d1b176a037b2cc6a04dad01a5c157722049bbecf632ca876224dd4b2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6a708e8a5bdb1011c2c381c9a5cfd8a9a956d7d0a9dc1bd8bcdaf52f76ef2f12\",\"dweb:/ipfs/Qmax9WHBnVsZP46ZxEMNRQpLQnrdE4dK8LehML1Py8FowF\"]},\"project:/contracts/ArcadeGame.sol\":{\"keccak256\":\"0x19ac7a4376119d0e96bb6b23b6f91f75b48216e455ac2824cae44689a9db8b91\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0d43fa2a3d0f6648f58fe6274d2c52a147d53044f42228a692200d88b250952e\",\"dweb:/ipfs/QmfMkMUqC1ecsbo4bufoFJsju8hunSKSACnfFiHb8AiT91\"]},\"project:/contracts/ArcadeToken.sol\":{\"keccak256\":\"0x666e27d8f400abfb58f8724cbb2d701955f1cbf7d38ff5ada478ff6f5578e33a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://734241aeacca6ef0d2bb845bf73acc1162c701beac1a4d5c35620c9fe206188d\",\"dweb:/ipfs/QmRAxjNbosFBs846JNuishEDUqBhuooCsh5R8ozznmngdn\"]},\"project:/contracts/GameManager.sol\":{\"keccak256\":\"0xc7cda9507858a8f8316609665510ba72a6144367436d55153fd194ac6ecaef8f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://600d8314f22cab8e2bf48705df9910cbb4b811a6e683cc78fc0b74d1a50405d2\",\"dweb:/ipfs/QmZmtqN4b9eEJQwn17WQfHZQoMq8A7ZwHkLHoqFdbWmiKs\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b5060405161048b38038061048b833981016040819052602c916077565b600080546001600160a01b039384166001600160a01b0319918216179091556001805492909316911617905560a5565b80516001600160a01b0381168114607257600080fd5b919050565b60008060408385031215608957600080fd5b609083605c565b9150609c60208401605c565b90509250929050565b6103d7806100b46000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c8063af89973514610046578063c3fe3e2814610050578063fc0c546a1461007f575b600080fd5b61004e610092565b005b600154610063906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b600054610063906001600160a01b031681565b600154604080516332ae25b760e21b815290516000926001600160a01b03169163cab896dc9160048083019260209291908290030181865afa1580156100dc573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610100919061035f565b600054604051636eb1769f60e11b815233600482015230602482015291925082916001600160a01b039091169063dd62ed3e90604401602060405180830381865afa158015610153573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610177919061035f565b10156101be5760405162461bcd60e51b8152602060048201526011602482015270105b1b1bddd85b98d9481b9bdd081cd95d607a1b60448201526064015b60405180910390fd5b6000546040516370a0823160e01b815233600482015282916001600160a01b0316906370a0823190602401602060405180830381865afa158015610206573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061022a919061035f565b10156102785760405162461bcd60e51b815260206004820152601a60248201527f496e73756666696369656e7420746f6b656e2062616c616e636500000000000060448201526064016101b5565b6000546040516323b872dd60e01b8152336004820152306024820152604481018390526001600160a01b03909116906323b872dd906064016020604051808303816000875af11580156102cf573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906102f39190610378565b50600160009054906101000a90046001600160a01b03166001600160a01b03166393e84cd96040518163ffffffff1660e01b8152600401600060405180830381600087803b15801561034457600080fd5b505af1158015610358573d6000803e3d6000fd5b5050505050565b60006020828403121561037157600080fd5b5051919050565b60006020828403121561038a57600080fd5b8151801515811461039a57600080fd5b939250505056fea2646970667358221220f606ec76ab2aaa8c6f64fafe03ed073094f49d8d10ba005362b6e11c326af11064736f6c634300081a0033",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c8063af89973514610046578063c3fe3e2814610050578063fc0c546a1461007f575b600080fd5b61004e610092565b005b600154610063906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b600054610063906001600160a01b031681565b600154604080516332ae25b760e21b815290516000926001600160a01b03169163cab896dc9160048083019260209291908290030181865afa1580156100dc573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610100919061035f565b600054604051636eb1769f60e11b815233600482015230602482015291925082916001600160a01b039091169063dd62ed3e90604401602060405180830381865afa158015610153573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610177919061035f565b10156101be5760405162461bcd60e51b8152602060048201526011602482015270105b1b1bddd85b98d9481b9bdd081cd95d607a1b60448201526064015b60405180910390fd5b6000546040516370a0823160e01b815233600482015282916001600160a01b0316906370a0823190602401602060405180830381865afa158015610206573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061022a919061035f565b10156102785760405162461bcd60e51b815260206004820152601a60248201527f496e73756666696369656e7420746f6b656e2062616c616e636500000000000060448201526064016101b5565b6000546040516323b872dd60e01b8152336004820152306024820152604481018390526001600160a01b03909116906323b872dd906064016020604051808303816000875af11580156102cf573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906102f39190610378565b50600160009054906101000a90046001600160a01b03166001600160a01b03166393e84cd96040518163ffffffff1660e01b8152600401600060405180830381600087803b15801561034457600080fd5b505af1158015610358573d6000803e3d6000fd5b5050505050565b60006020828403121561037157600080fd5b5051919050565b60006020828403121561038a57600080fd5b8151801515811461039a57600080fd5b939250505056fea2646970667358221220f606ec76ab2aaa8c6f64fafe03ed073094f49d8d10ba005362b6e11c326af11064736f6c634300081a0033",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.26+commit.8a97fa7a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_token\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_game\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"game\",\"outputs\":[{\"internalType\":\"contract ArcadeGame\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"playGame\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"token\",\"outputs\":[{\"internalType\":\"contract ArcadeToken\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/GameManager.sol\":\"GameManager\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/access/Ownable.sol\":{\"keccak256\":\"0xff6d0bb2e285473e5311d9d3caacb525ae3538a80758c10649a4d61029b017bb\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8ed324d3920bb545059d66ab97d43e43ee85fd3bd52e03e401f020afb0b120f6\",\"dweb:/ipfs/QmfEckWLmZkDDcoWrkEvMWhms66xwTLff9DDhegYpvHo1a\"]},\"@openzeppelin/contracts/interfaces/draft-IERC6093.sol\":{\"keccak256\":\"0x60c65f701957fdd6faea1acb0bb45825791d473693ed9ecb34726fdfaa849dd7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ea290300e0efc4d901244949dc4d877fd46e6c5e43dc2b26620e8efab3ab803f\",\"dweb:/ipfs/QmcLLJppxKeJWqHxE2CUkcfhuRTgHSn8J4kijcLa5MYhSt\"]},\"@openzeppelin/contracts/token/ERC20/ERC20.sol\":{\"keccak256\":\"0xc3e1fa9d1987f8d349dfb4d6fe93bf2ca014b52ba335cfac30bfe71e357e6f80\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c5703ccdeb7b1d685e375ed719117e9edf2ab4bc544f24f23b0d50ec82257229\",\"dweb:/ipfs/QmTdwkbQq7owpCiyuzE7eh5LrD2ddrBCZ5WHVsWPi1RrTS\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xc6a8ff0ea489379b61faa647490411b80102578440ab9d84e9a957cc12164e70\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0ea104e577e63faea3b69c415637e99e755dcbf64c5833d7140c35a714d6d90c\",\"dweb:/ipfs/Qmau6x4Ns9XdyynRCNNp3RhLqijJjFm7z5fyZazfYFGYdq\"]},\"@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol\":{\"keccak256\":\"0xaa761817f6cd7892fcf158b3c776b34551cde36f48ff9703d53898bc45a94ea2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0ad7c8d4d08938c8dfc43d75a148863fb324b80cf53e0a36f7e5a4ac29008850\",\"dweb:/ipfs/QmcrhfPgVNf5mkdhQvy1pMv51TFokD3Y4Wa5WZhFqVh8UV\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0x493033a8d1b176a037b2cc6a04dad01a5c157722049bbecf632ca876224dd4b2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6a708e8a5bdb1011c2c381c9a5cfd8a9a956d7d0a9dc1bd8bcdaf52f76ef2f12\",\"dweb:/ipfs/Qmax9WHBnVsZP46ZxEMNRQpLQnrdE4dK8LehML1Py8FowF\"]},\"project:/contracts/ArcadeGame.sol\":{\"keccak256\":\"0x19ac7a4376119d0e96bb6b23b6f91f75b48216e455ac2824cae44689a9db8b91\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0d43fa2a3d0f6648f58fe6274d2c52a147d53044f42228a692200d88b250952e\",\"dweb:/ipfs/QmfMkMUqC1ecsbo4bufoFJsju8hunSKSACnfFiHb8AiT91\"]},\"project:/contracts/ArcadeToken.sol\":{\"keccak256\":\"0x6e0d0fd9237e23ddf65f65501c31c6a2a17c5e6f4b4eceddd47fc7d497f2f4e2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://df946784c31421e012d35db279c7058582fb2658e7ee97dc9d5d8ecc57f68e49\",\"dweb:/ipfs/Qme16FYwM1TTK3FPftGAsh57QpJwZrb65Hbo2kppWs3dnP\"]},\"project:/contracts/GameManager.sol\":{\"keccak256\":\"0xc7cda9507858a8f8316609665510ba72a6144367436d55153fd194ac6ecaef8f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://600d8314f22cab8e2bf48705df9910cbb4b811a6e683cc78fc0b74d1a50405d2\",\"dweb:/ipfs/QmZmtqN4b9eEJQwn17WQfHZQoMq8A7ZwHkLHoqFdbWmiKs\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b5060405161048b38038061048b833981016040819052602c916077565b600080546001600160a01b039384166001600160a01b0319918216179091556001805492909316911617905560a5565b80516001600160a01b0381168114607257600080fd5b919050565b60008060408385031215608957600080fd5b609083605c565b9150609c60208401605c565b90509250929050565b6103d7806100b46000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c8063af89973514610046578063c3fe3e2814610050578063fc0c546a1461007f575b600080fd5b61004e610092565b005b600154610063906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b600054610063906001600160a01b031681565b600154604080516332ae25b760e21b815290516000926001600160a01b03169163cab896dc9160048083019260209291908290030181865afa1580156100dc573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610100919061035f565b600054604051636eb1769f60e11b815233600482015230602482015291925082916001600160a01b039091169063dd62ed3e90604401602060405180830381865afa158015610153573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610177919061035f565b10156101be5760405162461bcd60e51b8152602060048201526011602482015270105b1b1bddd85b98d9481b9bdd081cd95d607a1b60448201526064015b60405180910390fd5b6000546040516370a0823160e01b815233600482015282916001600160a01b0316906370a0823190602401602060405180830381865afa158015610206573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061022a919061035f565b10156102785760405162461bcd60e51b815260206004820152601a60248201527f496e73756666696369656e7420746f6b656e2062616c616e636500000000000060448201526064016101b5565b6000546040516323b872dd60e01b8152336004820152306024820152604481018390526001600160a01b03909116906323b872dd906064016020604051808303816000875af11580156102cf573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906102f39190610378565b50600160009054906101000a90046001600160a01b03166001600160a01b03166393e84cd96040518163ffffffff1660e01b8152600401600060405180830381600087803b15801561034457600080fd5b505af1158015610358573d6000803e3d6000fd5b5050505050565b60006020828403121561037157600080fd5b5051919050565b60006020828403121561038a57600080fd5b8151801515811461039a57600080fd5b939250505056fea2646970667358221220578ef22030798ca71faf3696800fb711d5519a6d834c6c204cb506c22ad60abe64736f6c634300081a0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c8063af89973514610046578063c3fe3e2814610050578063fc0c546a1461007f575b600080fd5b61004e610092565b005b600154610063906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b600054610063906001600160a01b031681565b600154604080516332ae25b760e21b815290516000926001600160a01b03169163cab896dc9160048083019260209291908290030181865afa1580156100dc573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610100919061035f565b600054604051636eb1769f60e11b815233600482015230602482015291925082916001600160a01b039091169063dd62ed3e90604401602060405180830381865afa158015610153573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610177919061035f565b10156101be5760405162461bcd60e51b8152602060048201526011602482015270105b1b1bddd85b98d9481b9bdd081cd95d607a1b60448201526064015b60405180910390fd5b6000546040516370a0823160e01b815233600482015282916001600160a01b0316906370a0823190602401602060405180830381865afa158015610206573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061022a919061035f565b10156102785760405162461bcd60e51b815260206004820152601a60248201527f496e73756666696369656e7420746f6b656e2062616c616e636500000000000060448201526064016101b5565b6000546040516323b872dd60e01b8152336004820152306024820152604481018390526001600160a01b03909116906323b872dd906064016020604051808303816000875af11580156102cf573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906102f39190610378565b50600160009054906101000a90046001600160a01b03166001600160a01b03166393e84cd96040518163ffffffff1660e01b8152600401600060405180830381600087803b15801561034457600080fd5b505af1158015610358573d6000803e3d6000fd5b5050505050565b60006020828403121561037157600080fd5b5051919050565b60006020828403121561038a57600080fd5b8151801515811461039a57600080fd5b939250505056fea2646970667358221220578ef22030798ca71faf3696800fb711d5519a6d834c6c204cb506c22ad60abe64736f6c634300081a0033",
   "immutableReferences": {},
   "generatedSources": [
     {
@@ -835,7 +835,7 @@
                 }
               ]
             },
-            "name": "abi_encode_tuple_t_contract$_ArcadeToken_$1075__to_t_address__fromStack_reversed",
+            "name": "abi_encode_tuple_t_contract$_ArcadeToken_$1073__to_t_address__fromStack_reversed",
             "nativeSrc": "241:223:10",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
@@ -2554,7 +2554,7 @@
           }
         ]
       },
-      "contents": "{\n    { }\n    function abi_encode_tuple_t_contract$_ArcadeGame_$1028__to_t_address__fromStack_reversed(headStart, value0) -> tail\n    {\n        tail := add(headStart, 32)\n        mstore(headStart, and(value0, sub(shl(160, 1), 1)))\n    }\n    function abi_encode_tuple_t_contract$_ArcadeToken_$1075__to_t_address__fromStack_reversed(headStart, value0) -> tail\n    {\n        tail := add(headStart, 32)\n        mstore(headStart, and(value0, sub(shl(160, 1), 1)))\n    }\n    function abi_decode_tuple_t_uint256_fromMemory(headStart, dataEnd) -> value0\n    {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n        value0 := mload(headStart)\n    }\n    function abi_encode_tuple_t_address_t_address__to_t_address_t_address__fromStack_reversed(headStart, value1, value0) -> tail\n    {\n        tail := add(headStart, 64)\n        mstore(headStart, and(value0, sub(shl(160, 1), 1)))\n        mstore(add(headStart, 32), and(value1, sub(shl(160, 1), 1)))\n    }\n    function abi_encode_tuple_t_stringliteral_b7f5bbf01babd612ff41adb253311ab3eccd8d56664e3b6ae54fa2e62b1bbfb0__to_t_string_memory_ptr__fromStack_reversed(headStart) -> tail\n    {\n        mstore(headStart, 32)\n        mstore(add(headStart, 32), 17)\n        mstore(add(headStart, 64), \"Allowance not set\")\n        tail := add(headStart, 96)\n    }\n    function abi_encode_tuple_t_address__to_t_address__fromStack_reversed(headStart, value0) -> tail\n    {\n        tail := add(headStart, 32)\n        mstore(headStart, and(value0, sub(shl(160, 1), 1)))\n    }\n    function abi_encode_tuple_t_stringliteral_a7e5e4d46ea524835ea36125140e247d59a2bce707f2094f88605dba8157d192__to_t_string_memory_ptr__fromStack_reversed(headStart) -> tail\n    {\n        mstore(headStart, 32)\n        mstore(add(headStart, 32), 26)\n        mstore(add(headStart, 64), \"Insufficient token balance\")\n        tail := add(headStart, 96)\n    }\n    function abi_encode_tuple_t_address_t_address_t_uint256__to_t_address_t_address_t_uint256__fromStack_reversed(headStart, value2, value1, value0) -> tail\n    {\n        tail := add(headStart, 96)\n        mstore(headStart, and(value0, sub(shl(160, 1), 1)))\n        mstore(add(headStart, 32), and(value1, sub(shl(160, 1), 1)))\n        mstore(add(headStart, 64), value2)\n    }\n    function abi_decode_tuple_t_bool_fromMemory(headStart, dataEnd) -> value0\n    {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n        let value := mload(headStart)\n        if iszero(eq(value, iszero(iszero(value)))) { revert(0, 0) }\n        value0 := value\n    }\n}",
+      "contents": "{\n    { }\n    function abi_encode_tuple_t_contract$_ArcadeGame_$1028__to_t_address__fromStack_reversed(headStart, value0) -> tail\n    {\n        tail := add(headStart, 32)\n        mstore(headStart, and(value0, sub(shl(160, 1), 1)))\n    }\n    function abi_encode_tuple_t_contract$_ArcadeToken_$1073__to_t_address__fromStack_reversed(headStart, value0) -> tail\n    {\n        tail := add(headStart, 32)\n        mstore(headStart, and(value0, sub(shl(160, 1), 1)))\n    }\n    function abi_decode_tuple_t_uint256_fromMemory(headStart, dataEnd) -> value0\n    {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n        value0 := mload(headStart)\n    }\n    function abi_encode_tuple_t_address_t_address__to_t_address_t_address__fromStack_reversed(headStart, value1, value0) -> tail\n    {\n        tail := add(headStart, 64)\n        mstore(headStart, and(value0, sub(shl(160, 1), 1)))\n        mstore(add(headStart, 32), and(value1, sub(shl(160, 1), 1)))\n    }\n    function abi_encode_tuple_t_stringliteral_b7f5bbf01babd612ff41adb253311ab3eccd8d56664e3b6ae54fa2e62b1bbfb0__to_t_string_memory_ptr__fromStack_reversed(headStart) -> tail\n    {\n        mstore(headStart, 32)\n        mstore(add(headStart, 32), 17)\n        mstore(add(headStart, 64), \"Allowance not set\")\n        tail := add(headStart, 96)\n    }\n    function abi_encode_tuple_t_address__to_t_address__fromStack_reversed(headStart, value0) -> tail\n    {\n        tail := add(headStart, 32)\n        mstore(headStart, and(value0, sub(shl(160, 1), 1)))\n    }\n    function abi_encode_tuple_t_stringliteral_a7e5e4d46ea524835ea36125140e247d59a2bce707f2094f88605dba8157d192__to_t_string_memory_ptr__fromStack_reversed(headStart) -> tail\n    {\n        mstore(headStart, 32)\n        mstore(add(headStart, 32), 26)\n        mstore(add(headStart, 64), \"Insufficient token balance\")\n        tail := add(headStart, 96)\n    }\n    function abi_encode_tuple_t_address_t_address_t_uint256__to_t_address_t_address_t_uint256__fromStack_reversed(headStart, value2, value1, value0) -> tail\n    {\n        tail := add(headStart, 96)\n        mstore(headStart, and(value0, sub(shl(160, 1), 1)))\n        mstore(add(headStart, 32), and(value1, sub(shl(160, 1), 1)))\n        mstore(add(headStart, 64), value2)\n    }\n    function abi_decode_tuple_t_bool_fromMemory(headStart, dataEnd) -> value0\n    {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n        let value := mload(headStart)\n        if iszero(eq(value, iszero(iszero(value)))) { revert(0, 0) }\n        value0 := value\n    }\n}",
       "id": 10,
       "language": "Yul",
       "name": "#utility.yul"
@@ -2571,7 +2571,7 @@
         1028
       ],
       "ArcadeToken": [
-        1075
+        1073
       ],
       "Context": [
         933
@@ -2580,7 +2580,7 @@
         799
       ],
       "GameManager": [
-        1159
+        1157
       ],
       "IERC20": [
         877
@@ -2595,12 +2595,12 @@
         147
       ]
     },
-    "id": 1160,
+    "id": 1158,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1077,
+        "id": 1075,
         "literals": [
           "solidity",
           "^",
@@ -2613,11 +2613,11 @@
       {
         "absolutePath": "project:/contracts/ArcadeToken.sol",
         "file": "./ArcadeToken.sol",
-        "id": 1078,
+        "id": 1076,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 1160,
-        "sourceUnit": 1076,
+        "scope": 1158,
+        "sourceUnit": 1074,
         "src": "60:27:8",
         "symbolAliases": [],
         "unitAlias": ""
@@ -2625,10 +2625,10 @@
       {
         "absolutePath": "project:/contracts/ArcadeGame.sol",
         "file": "./ArcadeGame.sol",
-        "id": 1079,
+        "id": 1077,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 1160,
+        "scope": 1158,
         "sourceUnit": 1029,
         "src": "89:26:8",
         "symbolAliases": [],
@@ -2641,9 +2641,9 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 1159,
+        "id": 1157,
         "linearizedBaseContracts": [
-          1159
+          1157
         ],
         "name": "GameManager",
         "nameLocation": "128:11:8",
@@ -2652,36 +2652,36 @@
           {
             "constant": false,
             "functionSelector": "fc0c546a",
-            "id": 1082,
+            "id": 1080,
             "mutability": "mutable",
             "name": "token",
             "nameLocation": "166:5:8",
             "nodeType": "VariableDeclaration",
-            "scope": 1159,
+            "scope": 1157,
             "src": "147:24:8",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_ArcadeToken_$1075",
+              "typeIdentifier": "t_contract$_ArcadeToken_$1073",
               "typeString": "contract ArcadeToken"
             },
             "typeName": {
-              "id": 1081,
+              "id": 1079,
               "nodeType": "UserDefinedTypeName",
               "pathNode": {
-                "id": 1080,
+                "id": 1078,
                 "name": "ArcadeToken",
                 "nameLocations": [
                   "147:11:8"
                 ],
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 1075,
+                "referencedDeclaration": 1073,
                 "src": "147:11:8"
               },
-              "referencedDeclaration": 1075,
+              "referencedDeclaration": 1073,
               "src": "147:11:8",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ArcadeToken_$1075",
+                "typeIdentifier": "t_contract$_ArcadeToken_$1073",
                 "typeString": "contract ArcadeToken"
               }
             },
@@ -2690,12 +2690,12 @@
           {
             "constant": false,
             "functionSelector": "c3fe3e28",
-            "id": 1085,
+            "id": 1083,
             "mutability": "mutable",
             "name": "game",
             "nameLocation": "196:4:8",
             "nodeType": "VariableDeclaration",
-            "scope": 1159,
+            "scope": 1157,
             "src": "178:22:8",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2704,10 +2704,10 @@
               "typeString": "contract ArcadeGame"
             },
             "typeName": {
-              "id": 1084,
+              "id": 1082,
               "nodeType": "UserDefinedTypeName",
               "pathNode": {
-                "id": 1083,
+                "id": 1081,
                 "name": "ArcadeGame",
                 "nameLocations": [
                   "178:10:8"
@@ -2727,26 +2727,26 @@
           },
           {
             "body": {
-              "id": 1104,
+              "id": 1102,
               "nodeType": "Block",
               "src": "252:81:8",
               "statements": [
                 {
                   "expression": {
-                    "id": 1096,
+                    "id": 1094,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 1092,
+                      "id": 1090,
                       "name": "token",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1082,
+                      "referencedDeclaration": 1080,
                       "src": "263:5:8",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_ArcadeToken_$1075",
+                        "typeIdentifier": "t_contract$_ArcadeToken_$1073",
                         "typeString": "contract ArcadeToken"
                       }
                     },
@@ -2755,11 +2755,11 @@
                     "rightHandSide": {
                       "arguments": [
                         {
-                          "id": 1094,
+                          "id": 1092,
                           "name": "_token",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1087,
+                          "referencedDeclaration": 1085,
                           "src": "283:6:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -2774,18 +2774,18 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 1093,
+                        "id": 1091,
                         "name": "ArcadeToken",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1075,
+                        "referencedDeclaration": 1073,
                         "src": "271:11:8",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_ArcadeToken_$1075_$",
+                          "typeIdentifier": "t_type$_t_contract$_ArcadeToken_$1073_$",
                           "typeString": "type(contract ArcadeToken)"
                         }
                       },
-                      "id": 1095,
+                      "id": 1093,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2797,33 +2797,33 @@
                       "src": "271:19:8",
                       "tryCall": false,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_ArcadeToken_$1075",
+                        "typeIdentifier": "t_contract$_ArcadeToken_$1073",
                         "typeString": "contract ArcadeToken"
                       }
                     },
                     "src": "263:27:8",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ArcadeToken_$1075",
+                      "typeIdentifier": "t_contract$_ArcadeToken_$1073",
                       "typeString": "contract ArcadeToken"
                     }
                   },
-                  "id": 1097,
+                  "id": 1095,
                   "nodeType": "ExpressionStatement",
                   "src": "263:27:8"
                 },
                 {
                   "expression": {
-                    "id": 1102,
+                    "id": 1100,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 1098,
+                      "id": 1096,
                       "name": "game",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1085,
+                      "referencedDeclaration": 1083,
                       "src": "301:4:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_contract$_ArcadeGame_$1028",
@@ -2835,11 +2835,11 @@
                     "rightHandSide": {
                       "arguments": [
                         {
-                          "id": 1100,
+                          "id": 1098,
                           "name": "_game",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1089,
+                          "referencedDeclaration": 1087,
                           "src": "319:5:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -2854,7 +2854,7 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 1099,
+                        "id": 1097,
                         "name": "ArcadeGame",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -2865,7 +2865,7 @@
                           "typeString": "type(contract ArcadeGame)"
                         }
                       },
-                      "id": 1101,
+                      "id": 1099,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2887,13 +2887,13 @@
                       "typeString": "contract ArcadeGame"
                     }
                   },
-                  "id": 1103,
+                  "id": 1101,
                   "nodeType": "ExpressionStatement",
                   "src": "301:24:8"
                 }
               ]
             },
-            "id": 1105,
+            "id": 1103,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
@@ -2901,17 +2901,17 @@
             "nameLocation": "-1:-1:-1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1090,
+              "id": 1088,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1087,
+                  "id": 1085,
                   "mutability": "mutable",
                   "name": "_token",
                   "nameLocation": "229:6:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1105,
+                  "scope": 1103,
                   "src": "221:14:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2920,7 +2920,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1086,
+                    "id": 1084,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "221:7:8",
@@ -2934,12 +2934,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 1089,
+                  "id": 1087,
                   "mutability": "mutable",
                   "name": "_game",
                   "nameLocation": "245:5:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1105,
+                  "scope": 1103,
                   "src": "237:13:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2948,7 +2948,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1088,
+                    "id": 1086,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "237:7:8",
@@ -2964,12 +2964,12 @@
               "src": "220:31:8"
             },
             "returnParameters": {
-              "id": 1091,
+              "id": 1089,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "252:0:8"
             },
-            "scope": 1159,
+            "scope": 1157,
             "src": "209:124:8",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -2977,23 +2977,23 @@
           },
           {
             "body": {
-              "id": 1157,
+              "id": 1155,
               "nodeType": "Block",
               "src": "368:327:8",
               "statements": [
                 {
                   "assignments": [
-                    1109
+                    1107
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 1109,
+                      "id": 1107,
                       "mutability": "mutable",
                       "name": "gameCost",
                       "nameLocation": "387:8:8",
                       "nodeType": "VariableDeclaration",
-                      "scope": 1157,
+                      "scope": 1155,
                       "src": "379:16:8",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -3002,7 +3002,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 1108,
+                        "id": 1106,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "379:7:8",
@@ -3014,24 +3014,24 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 1113,
+                  "id": 1111,
                   "initialValue": {
                     "arguments": [],
                     "expression": {
                       "argumentTypes": [],
                       "expression": {
-                        "id": 1110,
+                        "id": 1108,
                         "name": "game",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1085,
+                        "referencedDeclaration": 1083,
                         "src": "398:4:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_ArcadeGame_$1028",
                           "typeString": "contract ArcadeGame"
                         }
                       },
-                      "id": 1111,
+                      "id": 1109,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -3046,7 +3046,7 @@
                         "typeString": "function () view external returns (uint256)"
                       }
                     },
-                    "id": 1112,
+                    "id": 1110,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3073,7 +3073,7 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 1125,
+                        "id": 1123,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3082,7 +3082,7 @@
                           "arguments": [
                             {
                               "expression": {
-                                "id": 1117,
+                                "id": 1115,
                                 "name": "msg",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
@@ -3093,7 +3093,7 @@
                                   "typeString": "msg"
                                 }
                               },
-                              "id": 1118,
+                              "id": 1116,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -3110,14 +3110,14 @@
                             {
                               "arguments": [
                                 {
-                                  "id": 1121,
+                                  "id": 1119,
                                   "name": "this",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
                                   "referencedDeclaration": 4294967268,
                                   "src": "468:4:8",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_contract$_GameManager_$1159",
+                                    "typeIdentifier": "t_contract$_GameManager_$1157",
                                     "typeString": "contract GameManager"
                                   }
                                 }
@@ -3125,11 +3125,11 @@
                               "expression": {
                                 "argumentTypes": [
                                   {
-                                    "typeIdentifier": "t_contract$_GameManager_$1159",
+                                    "typeIdentifier": "t_contract$_GameManager_$1157",
                                     "typeString": "contract GameManager"
                                   }
                                 ],
-                                "id": 1120,
+                                "id": 1118,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": true,
@@ -3141,14 +3141,14 @@
                                   "typeString": "type(address)"
                                 },
                                 "typeName": {
-                                  "id": 1119,
+                                  "id": 1117,
                                   "name": "address",
                                   "nodeType": "ElementaryTypeName",
                                   "src": "460:7:8",
                                   "typeDescriptions": {}
                                 }
                               },
-                              "id": 1122,
+                              "id": 1120,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -3177,18 +3177,18 @@
                               }
                             ],
                             "expression": {
-                              "id": 1115,
+                              "id": 1113,
                               "name": "token",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1082,
+                              "referencedDeclaration": 1080,
                               "src": "432:5:8",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_ArcadeToken_$1075",
+                                "typeIdentifier": "t_contract$_ArcadeToken_$1073",
                                 "typeString": "contract ArcadeToken"
                               }
                             },
-                            "id": 1116,
+                            "id": 1114,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -3203,7 +3203,7 @@
                               "typeString": "function (address,address) view external returns (uint256)"
                             }
                           },
-                          "id": 1123,
+                          "id": 1121,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -3222,11 +3222,11 @@
                         "nodeType": "BinaryOperation",
                         "operator": ">=",
                         "rightExpression": {
-                          "id": 1124,
+                          "id": 1122,
                           "name": "gameCost",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1109,
+                          "referencedDeclaration": 1107,
                           "src": "478:8:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -3241,7 +3241,7 @@
                       },
                       {
                         "hexValue": "416c6c6f77616e6365206e6f7420736574",
-                        "id": 1126,
+                        "id": 1124,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -3267,7 +3267,7 @@
                           "typeString": "literal_string \"Allowance not set\""
                         }
                       ],
-                      "id": 1114,
+                      "id": 1112,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -3282,7 +3282,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 1127,
+                    "id": 1125,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3298,7 +3298,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1128,
+                  "id": 1126,
                   "nodeType": "ExpressionStatement",
                   "src": "424:84:8"
                 },
@@ -3310,7 +3310,7 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 1136,
+                        "id": 1134,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3319,7 +3319,7 @@
                           "arguments": [
                             {
                               "expression": {
-                                "id": 1132,
+                                "id": 1130,
                                 "name": "msg",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
@@ -3330,7 +3330,7 @@
                                   "typeString": "msg"
                                 }
                               },
-                              "id": 1133,
+                              "id": 1131,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -3353,18 +3353,18 @@
                               }
                             ],
                             "expression": {
-                              "id": 1130,
+                              "id": 1128,
                               "name": "token",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1082,
+                              "referencedDeclaration": 1080,
                               "src": "527:5:8",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_ArcadeToken_$1075",
+                                "typeIdentifier": "t_contract$_ArcadeToken_$1073",
                                 "typeString": "contract ArcadeToken"
                               }
                             },
-                            "id": 1131,
+                            "id": 1129,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -3379,7 +3379,7 @@
                               "typeString": "function (address) view external returns (uint256)"
                             }
                           },
-                          "id": 1134,
+                          "id": 1132,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -3398,11 +3398,11 @@
                         "nodeType": "BinaryOperation",
                         "operator": ">=",
                         "rightExpression": {
-                          "id": 1135,
+                          "id": 1133,
                           "name": "gameCost",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1109,
+                          "referencedDeclaration": 1107,
                           "src": "558:8:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -3417,7 +3417,7 @@
                       },
                       {
                         "hexValue": "496e73756666696369656e7420746f6b656e2062616c616e6365",
-                        "id": 1137,
+                        "id": 1135,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -3443,7 +3443,7 @@
                           "typeString": "literal_string \"Insufficient token balance\""
                         }
                       ],
-                      "id": 1129,
+                      "id": 1127,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -3458,7 +3458,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 1138,
+                    "id": 1136,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3474,7 +3474,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1139,
+                  "id": 1137,
                   "nodeType": "ExpressionStatement",
                   "src": "519:78:8"
                 },
@@ -3483,7 +3483,7 @@
                     "arguments": [
                       {
                         "expression": {
-                          "id": 1143,
+                          "id": 1141,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -3494,7 +3494,7 @@
                             "typeString": "msg"
                           }
                         },
-                        "id": 1144,
+                        "id": 1142,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3511,14 +3511,14 @@
                       {
                         "arguments": [
                           {
-                            "id": 1147,
+                            "id": 1145,
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 4294967268,
                             "src": "649:4:8",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_GameManager_$1159",
+                              "typeIdentifier": "t_contract$_GameManager_$1157",
                               "typeString": "contract GameManager"
                             }
                           }
@@ -3526,11 +3526,11 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_GameManager_$1159",
+                              "typeIdentifier": "t_contract$_GameManager_$1157",
                               "typeString": "contract GameManager"
                             }
                           ],
-                          "id": 1146,
+                          "id": 1144,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -3542,14 +3542,14 @@
                             "typeString": "type(address)"
                           },
                           "typeName": {
-                            "id": 1145,
+                            "id": 1143,
                             "name": "address",
                             "nodeType": "ElementaryTypeName",
                             "src": "641:7:8",
                             "typeDescriptions": {}
                           }
                         },
-                        "id": 1148,
+                        "id": 1146,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3566,11 +3566,11 @@
                         }
                       },
                       {
-                        "id": 1149,
+                        "id": 1147,
                         "name": "gameCost",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1109,
+                        "referencedDeclaration": 1107,
                         "src": "656:8:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -3594,18 +3594,18 @@
                         }
                       ],
                       "expression": {
-                        "id": 1140,
+                        "id": 1138,
                         "name": "token",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1082,
+                        "referencedDeclaration": 1080,
                         "src": "610:5:8",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ArcadeToken_$1075",
+                          "typeIdentifier": "t_contract$_ArcadeToken_$1073",
                           "typeString": "contract ArcadeToken"
                         }
                       },
-                      "id": 1142,
+                      "id": 1140,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -3620,7 +3620,7 @@
                         "typeString": "function (address,address,uint256) external returns (bool)"
                       }
                     },
-                    "id": 1150,
+                    "id": 1148,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3636,7 +3636,7 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 1151,
+                  "id": 1149,
                   "nodeType": "ExpressionStatement",
                   "src": "610:55:8"
                 },
@@ -3646,18 +3646,18 @@
                     "expression": {
                       "argumentTypes": [],
                       "expression": {
-                        "id": 1152,
+                        "id": 1150,
                         "name": "game",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1085,
+                        "referencedDeclaration": 1083,
                         "src": "676:4:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_ArcadeGame_$1028",
                           "typeString": "contract ArcadeGame"
                         }
                       },
-                      "id": 1154,
+                      "id": 1152,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -3672,7 +3672,7 @@
                         "typeString": "function () external"
                       }
                     },
-                    "id": 1155,
+                    "id": 1153,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3688,14 +3688,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1156,
+                  "id": 1154,
                   "nodeType": "ExpressionStatement",
                   "src": "676:11:8"
                 }
               ]
             },
             "functionSelector": "af899735",
-            "id": 1158,
+            "id": 1156,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -3703,25 +3703,25 @@
             "nameLocation": "350:8:8",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1106,
+              "id": 1104,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "358:2:8"
             },
             "returnParameters": {
-              "id": 1107,
+              "id": 1105,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "368:0:8"
             },
-            "scope": 1159,
+            "scope": 1157,
             "src": "341:354:8",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 1160,
+        "scope": 1158,
         "src": "119:579:8",
         "usedErrors": [],
         "usedEvents": []
@@ -3737,12 +3737,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x38ad076A272CEC61a814d2284aD104D2C4E5258F",
-      "transactionHash": "0xfb5f48dc6c0dc78fb038c349adb9f903b5d6c2693ded6a2d4509ebf0b3b78ef4"
+      "address": "0x44add3d0e295D0b5B6b89a698Db92C9549bF54ee",
+      "transactionHash": "0x7f7c814b29760defb72f052ea197942be69b9adb9986f4682182bc80f7eab41c"
     }
   },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-07-27T13:03:33.691Z",
+  "updatedAt": "2024-07-27T13:12:15.284Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
