@@ -1,18 +1,17 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
+import "@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol";
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 
 contract ArcadeToken is ERC20 {
     address public feeCollector;
     AggregatorV3Interface internal priceFeed;
     uint256 public constant USD_FEE = 1 * 10 ** 18; // $1 in wei
 
-    constructor() ERC20("ArcadeToken", "ARCD") {
+    constructor(address _priceFeed) ERC20("ArcadeToken", "ARCD") {
         feeCollector = msg.sender;
-        // Address for the ETH/USD price feed on the mainnet, change if using a different network
-        priceFeed = AggregatorV3Interface(0xF79D6aFBb6dA890132F9D7c355e3015f15F3406F); 
+        priceFeed = AggregatorV3Interface(_priceFeed); 
     }
 
     function getLatestPrice() public view returns (uint256) {
@@ -28,7 +27,7 @@ contract ArcadeToken is ERC20 {
 
     function calculateFee() public view returns (uint256) {
         uint256 ethPrice = getLatestPrice();
-        return USD_FEE / ethPrice;
+        return (USD_FEE * 10**18) / ethPrice;
     }
 
     function mint(address to, uint256 amount) public payable {

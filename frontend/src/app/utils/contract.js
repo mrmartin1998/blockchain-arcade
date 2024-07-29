@@ -4,9 +4,9 @@ import ArcadeGameArtifact from '../../../build/contracts/ArcadeGame.json';
 import GameManagerArtifact from '../../../build/contracts/GameManager.json';
 
 // Deployed contract addresses (update these addresses after deployment)
-const ArcadeTokenAddress = '0x1b1c3e142F4B7F589B761a44Dd8936a8585dc9Ee';
-const ArcadeGameAddress = '0x29F33938Bb8E736d3A3CD6a8d9A3F37991EFd617';
-const GameManagerAddress = '0x44add3d0e295D0b5B6b89a698Db92C9549bF54ee';
+const ArcadeTokenAddress = '0xE7F0B606f28aB874d8708D918aC6Bba774964728';
+const ArcadeGameAddress = '0xBb94A794a6749a9781E732b1f2432e559F8078E4';
+const GameManagerAddress = '0xe98e4dE0Dd01725a02fFb413a434DB8510ED96E7';
 
 // Create instances of the contracts
 const ArcadeToken = new web3.eth.Contract(ArcadeTokenArtifact.abi, ArcadeTokenAddress);

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ArcadeToken } from '../utils/contract';
 import web3 from '../utils/web3';
 
@@ -6,6 +6,21 @@ const BuyTokens = () => {
     const [amount, setAmount] = useState('');
     const [loading, setLoading] = useState(false);
     const [message, setMessage] = useState('');
+    const [balance, setBalance] = useState(0);
+
+    useEffect(() => {
+        const fetchBalance = async () => {
+            try {
+                const accounts = await web3.eth.getAccounts();
+                const account = accounts[0];
+                const balance = await ArcadeToken.methods.balanceOf(account).call();
+                setBalance(web3.utils.fromWei(balance, 'ether'));
+            } catch (error) {
+                console.error('Error fetching balance:', error);
+            }
+        };
+        fetchBalance();
+    }, []);
 
     const handleBuyTokens = async () => {
         setLoading(true);
@@ -19,19 +34,42 @@ const BuyTokens = () => {
             const weiAmount = web3.utils.toWei(amount.toString(), 'ether');
             console.log('Wei Amount:', weiAmount);
 
+            const fee = await ArcadeToken.methods.calculateFee().call();
+            console.log('Fee in Wei:', fee);
+
             const mintMethod = ArcadeToken.methods.mint(account, weiAmount);
             console.log('Mint Method:', mintMethod);
 
             // Estimate gas for the mint method
-            const gasEstimate = await mintMethod.estimateGas({ from: account });
+            const gasEstimate = await mintMethod.estimateGas({ from: account, value: fee });
             console.log('Estimated Gas:', gasEstimate);
 
             // Send the transaction with the estimated gas
-            await mintMethod.send({ from: account, gas: gasEstimate });
+            await mintMethod.send({ from: account, gas: gasEstimate, value: fee });
             setMessage('Tokens purchased successfully!');
+            setBalance((prevBalance) => parseFloat(prevBalance) + parseFloat(amount));
         } catch (error) {
             console.error('Error minting tokens:', error);
-            setMessage(`Error: ${error.message}`);
+
+            // Detailed error logging
+            if (error.message) {
+                console.error('Error message:', error.message);
+            }
+            if (error.stack) {
+                console.error('Error stack:', error.stack);
+            }
+            if (error.data) {
+                console.error('Error data:', error.data);
+            }
+
+            // Display error message to user
+            if (error.message) {
+                setMessage(`Error: ${error.message}`);
+            } else if (error.data && error.data.message) {
+                setMessage(`Error: ${error.data.message}`);
+            } else {
+                setMessage('An unknown error occurred.');
+            }
         }
         setLoading(false);
     };
@@ -81,6 +119,7 @@ const BuyTokens = () => {
                     </button> 
                     {message && <p className="mt-4 text-center">{message}</p>}
                 </div>
+                <p className="mt-4 text-center">Balance: {balance} ARCD</p>
             </div>
         </div>
     );
