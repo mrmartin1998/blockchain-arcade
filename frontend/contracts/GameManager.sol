@@ -2,23 +2,23 @@
 pragma solidity ^0.8.0;
 
 import "./ArcadeToken.sol";
-import "./ArcadeGame.sol";
+import "./BaseGame.sol";
 
 contract GameManager {
     ArcadeToken public token;
-    ArcadeGame public game;
+    mapping(address => bool) public registeredGames;
 
-    constructor(address _token, address _game) {
-        token = ArcadeToken(_token);
-        game = ArcadeGame(_game);
+    constructor(ArcadeToken _token) {
+        token = _token;
     }
 
-    function playGame() public {
-        uint256 gameCost = game.gameCost();
-        require(token.allowance(msg.sender, address(this)) >= gameCost, "Allowance not set");
-        require(token.balanceOf(msg.sender) >= gameCost, "Insufficient token balance");
+    function registerGame(address gameAddress) public {
+        registeredGames[gameAddress] = true;
+    }
 
-        token.transferFrom(msg.sender, address(this), gameCost);
+    function playGame(address gameAddress) public {
+        require(registeredGames[gameAddress], "Game not registered");
+        BaseGame game = BaseGame(gameAddress);
         game.play();
     }
 }

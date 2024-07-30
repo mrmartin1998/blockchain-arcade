@@ -1,20 +1,20 @@
 import web3 from './web3';
 import ArcadeTokenArtifact from '../../../build/contracts/ArcadeToken.json';
-import ArcadeGameArtifact from '../../../build/contracts/ArcadeGame.json';
 import GameManagerArtifact from '../../../build/contracts/GameManager.json';
+import ExampleGameArtifact from '../../../build/contracts/ExampleGame.json';
 
 // Deployed contract addresses (update these addresses after deployment)
-const ArcadeTokenAddress = '0xE7F0B606f28aB874d8708D918aC6Bba774964728';
-const ArcadeGameAddress = '0xBb94A794a6749a9781E732b1f2432e559F8078E4';
-const GameManagerAddress = '0xe98e4dE0Dd01725a02fFb413a434DB8510ED96E7';
+const ArcadeTokenAddress = '0xA0aFfA20c322ad767c58C9376C3937a3e45e9a84';
+const GameManagerAddress = '0x3D159f48C0b62f4c44625166F79180569AA7B3da';
+const ExampleGameAddress = '0xb742ccF51bC3cB907062F4506eBd83D021b4C6E6';
 
 // Create instances of the contracts
 const ArcadeToken = new web3.eth.Contract(ArcadeTokenArtifact.abi, ArcadeTokenAddress);
-const ArcadeGame = new web3.eth.Contract(ArcadeGameArtifact.abi, ArcadeGameAddress);
 const GameManager = new web3.eth.Contract(GameManagerArtifact.abi, GameManagerAddress);
+const ExampleGame = new web3.eth.Contract(ExampleGameArtifact.abi, ExampleGameAddress);
 
 export {
     ArcadeToken,
-    ArcadeGame,
-    GameManager
+    GameManager,
+    ExampleGame
 };
